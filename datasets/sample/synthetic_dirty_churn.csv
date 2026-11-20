@@ -1,0 +1,1031 @@
+customer_id,tenure_months,monthly_charges,total_charges,contract,paperless_billing,country,churn
+C100000,7,93.66,655.62,Month-to-month,yes ,DE,Yes
+C100001,55,66.83,3675.65,Two year,No,DE,No
+C100002,47,76.62,3601.14,One year,No,DE,No
+C100003,32,63.86,2043.52,One year,Yes,DE,No
+C100004,31,61.59,1909.29,Month-to-month,No,DE,Yes
+C100005,61,49.41,3014.01,Month-to-month,Yes,DE,No
+C100006,7,73.61,515.27,Month-to-month,No,DE,No
+C100007,50,47.97,2398.5,Month-to-month,No,DE,No
+C100008,15,78.31,1174.65,Month-to-month,No,DE,No
+C100009,7,86.71,606.97,Month-to-month,Yes,DE,No
+C100010,38,72.33,2748.54,Month-to-month,No,DE,No
+C100011,70,59.28,4149.6,One year,Yes,DE,No
+C100012,53,74.08,3926.24,One year,No,DE,Yes
+C100013,55,58.83,3235.65,Month-to-month,Yes,DE,No
+C100014,51,83.71,4269.21,Month-to-month,Yes,DE,No
+C100015,56,28.37,1588.72,One year,No,DE,No
+C100016,37,58.29,2156.73,One year,No,DE,No
+C100017,10,25.18,251.8,Two year,Yes,DE,Yes
+C100018,60,35.1,2106.0,Month-to-month,Yes,DE,No
+C100019,32,92.28,2952.96,Two year,Yes,DE,No
+C100020,36,82.9,2984.4,Month-to-month,yes ,DE,Yes
+C100021,27,50.61,1366.47,Month-to-month,Yes,DE,Yes
+C100022,13,34.95,454.35,Month-to-month,Yes,DE,Yes
+C100023,66,18.0,1188.0,Month-to-month,Yes,DE,No
+C100024,56,54.13,3031.28,Month-to-month,Yes,DE,No
+C100025,46,113.41,5216.86,Month-to-month,Yes,DE,No
+C100026,29,73.7,2137.3,One year,No,DE,Yes
+C100027,59,53.81,3174.79,Month-to-month,No,DE,Yes
+C100028,39,74.3,2897.7,Month-to-month,Yes,DE,Yes
+C100029,32,33.78,1080.96,Month-to-month,No,DE,No
+C100030,32,59.05,1889.6,Month-to-month,No,DE,No
+C100031,17,66.99,1138.83,Month-to-month,Yes,DE,No
+C100032,7,63.28,442.96,Month-to-month,No,DE,No
+C100033,40,80.82,3232.8,Month-to-month,yes ,DE,Yes
+C100034,64,71.89,4600.96,One year,No,DE,No
+C100035,5,78.37,391.85,Two year,Yes,DE,Yes
+C100036,61,51.23,3125.03,Month-to-month,Yes,DE,Yes
+C100037,59,82.96,4894.64,One year,Yes,DE,No
+C100038,20,97.58,1951.6,Two year,Yes,DE,Yes
+C100039,45,,2052.0,Two year,yes ,DE,No
+C100040,12,47.25,567.0,One year,No,DE,No
+C100041,54,91.72,4952.88,Two year,No,DE,No
+C100042,50,61.17,3058.5,Two year,No,DE,No
+C100043,26,93.08,2420.08,One year,No,DE,No
+C100044,5,56.15,280.75,Month-to-month,Yes,DE,Yes
+C100045,69,94.1,6492.9,Month-to-month,Yes,DE,Yes
+C100046,32,67.63,2164.16,Month-to-month,Yes,DE,Yes
+C100047,64,70.16,4490.24,Month-to-month,Yes,DE,No
+C100048,49,96.29,4718.21,Month-to-month,YES,DE,No
+C100049,56,57.76,3234.56,Month-to-month,Yes,DE,Yes
+C100050,54,46.18,2493.72,One year,Yes,DE,No
+C100051,14,56.03,784.42,One year,Yes,DE,No
+C100052,26,74.05,1925.3,Two year,yes ,DE,No
+C100053,34,33.68,1145.12,Month-to-month,No,DE,No
+C100054,36,77.75,2799.0,Month-to-month,Yes,DE,No
+C100055,4,54.22,216.88,One year,Yes,DE,No
+C100056,39,87.96,3430.44,Two year,Yes,DE,No
+C100057,11,18.0,198.0,Two year,No,DE,Yes
+C100058,53,,2611.31,Two year,Yes,DE,No
+C100059,49,31.27,1532.23,Two year,No,DE,Yes
+C100060,66,48.48,3199.68,Month-to-month,No,DE,No
+C100061,53,69.95,3707.35,Month-to-month,No,DE,Yes
+C100062,27,61.42,1658.34,Month-to-month,Yes,DE,Yes
+C100063,69,59.93,4135.17,One year,Yes,DE,Yes
+C100064,30,61.82,1854.6,Two year,Yes,DE,No
+C100065,24,69.07,1657.68,Month-to-month,No,DE,Yes
+C100066,65,44.83,2913.95,One year,Yes,DE,No
+C100067,27,79.14,2136.78,Month-to-month,Yes,DE,Yes
+C100068,6,78.25,469.5,Month-to-month,Yes,DE,Yes
+C100069,34,72.7,2471.8,Month-to-month,No,DE,No
+C100070,57,76.13,4339.41,Month-to-month,No,DE,No
+C100071,14,70.93,993.02,Two year,Yes,DE,No
+C100072,33,105.7,3488.1,Month-to-month,No,DE,Yes
+C100073,10,63.26,632.6,Two year,No,DE,Yes
+C100074,49,58.86,2884.14,One year,No,DE,No
+C100075,34,49.93,1697.62,Month-to-month,No,DE,Yes
+C100076,24,44.35,1064.4,Month-to-month,Yes,DE,Yes
+C100077,17,40.11,681.87,Two year,yes ,DE,No
+C100078,41,47.22,1936.02,Month-to-month,No,DE,No
+C100079,48,63.59,3052.32,Two year,No,DE,No
+C100080,67,,4803.23,Month-to-month,No,DE,No
+C100081,32,66.02,2112.64,One year,No,DE,No
+C100082,12,49.69,596.28,Two year,Yes,DE,No
+C100083,60,83.0,4980.0,Month-to-month,No,DE,Yes
+C100084,45,79.79,3590.55,Month-to-month,No,DE,Yes
+C100085,50,61.81,3090.5,Two year,Yes,DE,No
+C100086,7,51.94,363.58,Month-to-month,Yes,DE,Yes
+C100087,23,75.97,1747.31,Month-to-month,No,DE,No
+C100088,55,68.76,3781.8,Month-to-month,Yes,DE,Yes
+C100089,60,36.04,2162.4,Month-to-month,No,DE,No
+C100090,31,63.64,1972.84,One year,No,DE,No
+C100091,58,70.24,4073.92,One year,No,DE,No
+C100092,60,47.01,2820.6,Month-to-month,Yes,DE,No
+C100093,28,68.8,1926.4,Two year,Yes,DE,No
+C100094,64,35.9,2297.6,Month-to-month,No,DE,No
+C100095,21,91.72,1926.12,Month-to-month,No,DE,Yes
+C100096,18,89.96,1619.28,One year,Yes,DE,No
+C100097,49,59.95,2937.55,Two year,Yes,DE,No
+C100098,46,72.27,3324.42,Month-to-month,Yes,DE,No
+C100099,10,18.0,180.0,Month-to-month,No,DE,No
+C100100,60,41.87,2512.2,Month-to-month,No,DE,No
+C100101,15,59.12,886.8,Two year,Yes,DE,Yes
+C100102,58,43.56,2526.48,Month-to-month,Yes,DE,No
+C100103,1,79.29,79.29,Month-to-month,Yes,DE,Yes
+C100104,57,104.95,5982.15,One year,No,DE,No
+C100105,56,41.47,2322.32,Month-to-month,Yes,DE,No
+C100106,56,48.25,2702.0,Month-to-month,Yes,DE,No
+C100107,48,69.71,3346.08,Month-to-month,Yes,DE,Yes
+C100108,34,97.22,3305.48,Month-to-month,No,DE,Yes
+C100109,51,40.55,2068.05,Month-to-month,Yes,DE,Yes
+C100110,20,69.98,1399.6,Two year,Yes,DE,No
+C100111,56,101.43,5680.08,One year,No,DE,No
+C100112,40,31.96,1278.4,One year,Yes,DE,No
+C100113,33,39.38,1299.54,Two year,Yes,DE,No
+C100114,36,56.53,2035.08,Month-to-month,No,DE,Yes
+C100115,41,54.59,2238.19,Month-to-month,No,DE,No
+C100116,3,81.25,243.75,Two year,Yes,DE,Yes
+C100117,10,,698.3,Month-to-month,Yes,DE,No
+C100118,18,29.5,531.0,One year,Yes,DE,Yes
+C100119,9,75.31,677.79,One year,No,DE,No
+C100120,32,53.45,1710.4,Month-to-month,No,DE,No
+C100121,48,90.49,4343.52,Month-to-month,No,DE,No
+C100122,47,52.45,2465.15,Month-to-month,No,DE,No
+C100123,34,52.27,1777.18,Month-to-month,yes ,DE,Yes
+C100124,61,75.82,4625.02,Month-to-month,No,DE,No
+C100125,41,80.26,3290.66,Month-to-month,No,DE,No
+C100126,6,73.96,443.76,One year,Yes,DE,No
+C100127,55,31.29,1720.95,Two year,No,DE,No
+C100128,41,75.76,3106.16,Two year,No,DE,No
+C100129,46,44.31,2038.26,Month-to-month,No,DE,No
+C100130,41,,2858.11,Month-to-month,No,DE,Yes
+C100131,40,36.53,1461.2,Month-to-month,Yes,DE,No
+C100132,7,73.93,517.51,Month-to-month,Yes,DE,No
+C100133,40,48.87,1954.8,Two year,Yes,DE,No
+C100134,57,39.35,2242.95,Month-to-month,No,DE,No
+C100135,22,79.28,1744.16,Month-to-month,No,DE,Yes
+C100136,43,69.83,3002.69,Two year,Yes,DE,No
+C100137,3,52.72,158.16,Month-to-month,Yes,DE,Yes
+C100138,25,94.02,2350.5,Month-to-month,YES,DE,Yes
+C100139,32,56.19,1798.08,Month-to-month,No,DE,No
+C100140,70,65.64,4594.8,One year,YES,DE,No
+C100141,16,70.38,1126.08,One year,Yes,DE,No
+C100142,20,52.61,1052.2,Month-to-month,Yes,DE,Yes
+C100143,30,74.42,2232.6,Two year,No,DE,No
+C100144,71,54.33,3857.43,Two year,Yes,DE,No
+C100145,61,56.77,3462.97,Two year,Yes,DE,No
+C100146,3,92.25,276.75,,Yes,DE,Yes
+C100147,17,44.19,751.23,Month-to-month,YES,DE,No
+C100148,59,18.0,1062.0,,Yes,DE,No
+C100149,5,97.22,486.1,Month-to-month,No,DE,Yes
+C100150,61,115.99,7075.39,One year,No,DE,No
+C100151,20,56.89,1137.8,One year,No,DE,No
+C100152,66,26.26,1733.16,Month-to-month,No,DE,No
+C100153,21,58.79,1234.59,One year,No,DE,No
+C100154,31,59.28,1837.68,Two year,Yes,DE,No
+C100155,47,61.2,2876.4,One year,No,DE,No
+C100156,9,42.73,384.57,Month-to-month,Yes,DE,No
+C100157,40,76.59,3063.6,Two year,Yes,DE,No
+C100158,36,75.49,2717.64,Month-to-month,No,DE,Yes
+C100159,56,35.11,1966.16,One year,Yes,DE,No
+C100160,71,78.98,5607.58,Two year,Yes,DE,No
+C100161,48,106.05,5090.4,One year,Yes,DE,Yes
+C100162,30,68.44,2053.2,Month-to-month,Yes,DE,No
+C100163,29,58.25,1689.25,Month-to-month,No,DE,Yes
+C100164,30,62.16,1864.8,Month-to-month,No,DE,No
+C100165,58,77.31,4483.98,Month-to-month,Yes,DE,Yes
+C100166,23,30.39,698.97,Month-to-month,Yes,DE,No
+C100167,12,68.29,819.48,One year,No,DE,Yes
+C100168,24,57.19,1372.56,Month-to-month,No,DE,No
+C100169,2,101.96,203.92,One year,Yes,DE,No
+C100170,8,61.52,492.16,Two year,YES,DE,No
+C100171,7,98.36,688.52,Month-to-month,Yes,DE,No
+C100172,55,42.93,2361.15,One year,Yes,DE,No
+C100173,52,76.75,3991.0,One year,Yes,DE,No
+C100174,50,71.39,3569.5,Month-to-month,No,DE,Yes
+C100175,33,,1571.46,Month-to-month,Yes,DE,No
+C100176,51,,3496.05,One year,Yes,DE,Yes
+C100177,12,89.25,1071.0,Two year,Yes,DE,No
+C100178,64,58.52,3745.28,One year,Yes,DE,No
+C100179,36,31.16,1121.76,Two year,No,DE,No
+C100180,67,64.65,4331.55,Two year,Yes,DE,No
+C100181,11,46.95,516.45,Month-to-month,Yes,DE,Yes
+C100182,36,,2093.4,,No,DE,No
+C100183,50,63.37,3168.5,Month-to-month,No,DE,No
+C100184,36,30.89,1112.04,Two year,Yes,DE,No
+C100185,32,32.69,1046.08,Month-to-month,No,DE,No
+C100186,12,74.64,895.68,Month-to-month,No,DE,Yes
+C100187,28,54.55,1527.4,Two year,No,DE,Yes
+C100188,17,18.0,306.0,Month-to-month,No,DE,No
+C100189,22,80.7,1775.4,One year,No,DE,No
+C100190,49,70.45,3452.05,Month-to-month,Yes,DE,Yes
+C100191,45,50.72, ,Two year,Yes,DE,No
+C100192,44,38.66,1701.04,Two year,Yes,DE,No
+C100193,26,81.72,2124.72,Month-to-month,Yes,DE,No
+C100194,69,71.99,4967.31,One year,No,DE,No
+C100195,7,112.65,788.55,Month-to-month,Yes,DE,Yes
+C100196,25,73.4,1835.0,,Yes,DE,No
+C100197,9,72.75,654.75,One year,No,DE,Yes
+C100198,25,,1541.5,Two year,No,DE,No
+C100199,69,81.34,5612.46,Month-to-month,No,DE,No
+C100200,27,77.5,2092.5,Month-to-month,Yes,DE,No
+C100201,65,90.03,5851.95,One year,Yes,DE,No
+C100202,36,54.57,1964.52,One year,No,DE,No
+C100203,50,56.29,2814.5,Month-to-month,Yes,DE,Yes
+C100204,33,55.42,1828.86,Month-to-month,Yes,DE,No
+C100205,19,80.82,1535.58,Month-to-month,No,DE,No
+C100206,55,94.97,5223.35,Two year,Yes,DE,Yes
+C100207,69,55.82,3851.58,Month-to-month,No,DE,No
+C100208,19,56.5,1073.5,Month-to-month,Yes,DE,No
+C100209,56,71.28,3991.68,Two year,No,DE,Yes
+C100210,19,60.08,1141.52,,No,DE,Yes
+C100211,51,84.04,4286.04,One year,No,DE,No
+C100212,57,19.96,1137.72,Month-to-month,Yes,DE,No
+C100213,32,48.47,1551.04,Two year,No,DE,No
+C100214,53,49.35,2615.55,One year,No,DE,No
+C100215,20,18.59,371.8,,No,DE,No
+C100216,6,45.73,274.38,Month-to-month,Yes,DE,Yes
+C100217,7,46.7,326.9,Month-to-month,Yes,DE,No
+C100218,32,60.98,1951.36,One year,Yes,DE,No
+C100219,65,87.26,5671.9,Month-to-month,Yes,DE,Yes
+C100220,10,60.1,601.0,Month-to-month,No,DE,No
+C100221,33,44.38,1464.54,Month-to-month,No,DE,Yes
+C100222,50,63.86,3193.0,Two year,No,DE,No
+C100223,15,85.98,1289.7,One year,No,DE,No
+C100224,52,45.48,2364.96,One year,No,DE,No
+C100225,22,46.79,1029.38,One year,Yes,DE,Yes
+C100226,58,76.17,4417.86,Month-to-month,Yes,DE,Yes
+C100227,42,60.57,2543.94,Month-to-month,No,DE,No
+C100228,39,77.95,3040.05,Month-to-month,Yes,DE,Yes
+C100229,13,64.73,841.49,One year,Yes,DE,Yes
+C100230,33,79.03,2607.99,Month-to-month,No,DE,No
+C100231,61,44.3,2702.3,Two year,No,DE,No
+C100232,2,64.76,129.52,Two year,Yes,DE,Yes
+C100233,54,60.79,3282.66,Month-to-month,Yes,DE,No
+C100234,35,,1423.8,One year,Yes,DE,No
+C100235,52,33.73,1753.96,Month-to-month,No,DE,No
+C100236,48,78.71,3778.08,Two year,No,DE,No
+C100237,31,57.98,1797.38,Two year,No,DE,No
+C100238,22,44.55,980.1,Two year,No,DE,No
+C100239,45,63.08,2838.6,Month-to-month,Yes,DE,No
+C100240,10,87.56,875.6,Month-to-month,No,DE,No
+C100241,42,19.39,814.38,Month-to-month,Yes,DE,Yes
+C100242,7,35.07,245.49,Month-to-month,Yes,DE,Yes
+C100243,47,46.54,2187.38,Month-to-month,No,DE,Yes
+C100244,45,94.22,4239.9,Month-to-month,No,DE,No
+C100245,6,70.65,423.9,Two year,Yes,DE,No
+C100246,54,80.35,4338.9,Month-to-month,Yes,DE,No
+C100247,30,42.2,1266.0,Month-to-month,Yes,DE,No
+C100248,56,42.61,2386.16,Two year,No,DE,No
+C100249,3,73.96,221.88,One year,No,DE,Yes
+C100250,13,66.17,860.21,One year,Yes,DE,No
+C100251,36,,2734.92,One year,Yes,DE,No
+C100252,14,61.25,857.5,Two year,Yes,DE,Yes
+C100253,24,70.56, ,One year,Yes,DE,No
+C100254,47,68.16,3203.52,Month-to-month,Yes,DE,Yes
+C100255,11,80.56,886.16,One year,Yes,DE,No
+C100256,49,81.14,3975.86,Month-to-month,Yes,DE,No
+C100257,8,,260.8,Month-to-month,No,DE,Yes
+C100258,13,20.05,260.65,Month-to-month,No,DE,Yes
+C100259,42,85.03,3571.26,Month-to-month,Yes,DE,Yes
+C100260,57,88.75,5058.75,One year,No,DE,Yes
+C100261,13,44.59,579.67,Month-to-month,Yes,DE,No
+C100262,22,27.8,611.6,Month-to-month,No,DE,Yes
+C100263,66,66.98,4420.68,Month-to-month,Yes,DE,Yes
+C100264,71,83.62,5937.02,Two year,No,DE,No
+C100265,42,100.95,4239.9,Month-to-month,Yes,DE,No
+C100266,32,75.33,2410.56,One year,No,DE,No
+C100267,25,57.57,1439.25,Two year,Yes,DE,No
+C100268,44,47.14,2074.16,Month-to-month,No,DE,Yes
+C100269,42,65.23,2739.66,One year,Yes,DE,No
+C100270,21,59.01,1239.21,Month-to-month,No,DE,Yes
+C100271,2,44.7,89.4,Month-to-month,Yes,DE,No
+C100272,11,105.98,1165.78,One year,No,DE,No
+C100273,69,100.7,6948.3,Two year,Yes,DE,No
+C100274,30,87.72,2631.6,Month-to-month,No,DE,No
+C100275,35,46.58,1630.3,One year,No,DE,No
+C100276,34,82.1,2791.4,Month-to-month,No,DE,Yes
+C100277,56,77.79,4356.24,One year,Yes,DE,No
+C100278,5,73.85,369.25,One year,Yes,DE,No
+C100279,6,89.99,539.94,One year,Yes,DE,No
+C100280,20,77.71,1554.2,One year,No,DE,No
+C100281,35,79.8,2793.0,Month-to-month,No,DE,Yes
+C100282,48,77.74,3731.52,One year,Yes,DE,No
+C100283,35,71.82,2513.7,One year,No,DE,Yes
+C100284,32,29.33,938.56,One year,Yes,DE,No
+C100285,67,66.67,4466.89,Month-to-month,No,DE,Yes
+C100286,12,53.88,646.56,Month-to-month,Yes,DE,No
+C100287,41,39.4,1615.4,Month-to-month,Yes,DE,Yes
+C100288,39,98.64,3846.96,Month-to-month,Yes,DE,Yes
+C100289,34,,3385.72,Month-to-month,Yes,DE,Yes
+C100290,58,92.18,5346.44,Month-to-month,Yes,DE,No
+C100291,19,70.1,1331.9,One year,Yes,DE,No
+C100292,68,92.01,6256.68,,Yes,DE,Yes
+C100293,24,65.24,1565.76,Two year,Yes,DE,Yes
+C100294,39,69.06,2693.34,Month-to-month,No,DE,No
+C100295,37,43.13,1595.81,One year,Yes,DE,No
+C100296,61,72.94,4449.34,Month-to-month,Yes,DE,No
+C100297,32,,2118.72,Month-to-month,No,DE,Yes
+C100298,21,38.95,817.95,One year,No,DE,No
+C100299,2,63.98,127.96,Two year,Yes,DE,Yes
+C100300,26,63.41,1648.66,Month-to-month,No,DE,No
+C100301,59,100.95,5956.05,Month-to-month,No,DE,Yes
+C100302,1,82.88,82.88,One year,No,DE,No
+C100303,64,65.23,4174.72,One year,Yes,DE,No
+C100304,39,69.98,2729.22,Month-to-month,Yes,DE,No
+C100305,10,65.88,658.8,,Yes,DE,Yes
+C100306,22,60.94,1340.68,Month-to-month,No,DE,Yes
+C100307,40,,1734.0,Two year,No,DE,No
+C100308,23,61.98,1425.54,Month-to-month,No,DE,No
+C100309,8,50.08,400.64,Month-to-month,No,DE,Yes
+C100310,48,39.99,1919.52,Two year,Yes,DE,No
+C100311,48,75.22,3610.56,Month-to-month,Yes,DE,No
+C100312,9,, ,Month-to-month,No,DE,No
+C100313,20,29.27,585.4,,No,DE,No
+C100314,18,62.55,1125.9,Month-to-month,Yes,DE,No
+C100315,47,84.91,3990.77,Month-to-month,Yes,DE,No
+C100316,52,86.18,4481.36,Month-to-month,No,DE,Yes
+C100317,52,900.0,4447.04,,Yes,DE,No
+C100318,67,65.78,4407.26,One year,Yes,DE,Yes
+C100319,55,48.1,2645.5,Month-to-month,No,DE,No
+C100320,23,43.33,996.59,One year,Yes,DE,No
+C100321,8,71.89,575.12,Month-to-month,Yes,DE,Yes
+C100322,44,72.59,3193.96,Two year,No,DE,No
+C100323,66,90.75,5989.5,Month-to-month,Yes,DE,Yes
+C100324,70,87.0,6090.0,One year,No,DE,No
+C100325,17,,1060.12,Month-to-month,Yes,DE,Yes
+C100326,17,40.12,682.04,One year,Yes,DE,Yes
+C100327,3,58.62,175.86,Month-to-month,Yes,DE,No
+C100328,11,69.34,762.74,One year,No,DE,No
+C100329,40,60.96,2438.4,Month-to-month,Yes,DE,Yes
+C100330,39,53.44,2084.16,,No,DE,No
+C100331,27,,1891.62,Month-to-month,Yes,DE,No
+C100332,23,54.92,1263.16,One year,Yes,DE,No
+C100333,59,52.44,3093.96,Two year,No,DE,No
+C100334,33,71.23,2350.59,Two year,No,DE,No
+C100335,58,56.96,3303.68,Month-to-month,No,DE,No
+C100336,69,69.88,4821.72,Month-to-month,Yes,DE,No
+C100337,23,70.46,1620.58,Month-to-month,YES,DE,No
+C100338,15,42.21,633.15,Month-to-month,No,DE,Yes
+C100339,68,55.38,3765.84,One year,Yes,DE,No
+C100340,46,93.76,4312.96,Two year,Yes,DE,No
+C100341,21,41.76,876.96,Two year,No,DE,No
+C100342,45,22.67,1020.15,Month-to-month,No,DE,Yes
+C100343,37,27.76,1027.12,One year,Yes,DE,No
+C100344,65,65.58,4262.7,Two year,No,DE,No
+C100345,19,65.62,1246.78,Two year,No,DE,No
+C100346,71,62.65,4448.15,Month-to-month,Yes,DE,No
+C100347,67,89.28,5981.76,Month-to-month,No,DE,No
+C100348,13,18.0,234.0,Two year,No,DE,Yes
+C100349,12,72.92,875.04,Month-to-month,Yes,DE,No
+C100350,38,96.23,3656.74,Month-to-month,Yes,DE,Yes
+C100351,4,42.44,169.76,Two year,Yes,DE,Yes
+C100352,22,900.0,1262.8,Two year,No,DE,No
+C100353,31,49.94,1548.14,Two year,Yes,DE,Yes
+C100354,69,47.11,3250.59,One year,Yes,DE,No
+C100355,71,58.47,4151.37,Month-to-month,Yes,DE,Yes
+C100356,11,,1029.05,Month-to-month,Yes,DE,Yes
+C100357,64,101.75,6512.0,Month-to-month,Yes,DE,No
+C100358,7,58.28,407.96,One year,No,DE,Yes
+C100359,54,103.1,5567.4,Month-to-month,No,DE,Yes
+C100360,61,65.71,4008.31,One year,Yes,DE,Yes
+C100361,64,,6404.48,Month-to-month,Yes,DE,No
+C100362,16,63.13,1010.08,One year,Yes,DE,No
+C100363,64,67.62,4327.68,Month-to-month,No,DE,No
+C100364,9,72.31,650.79,Month-to-month,No,DE,Yes
+C100365,37,120.0,4440.0,Month-to-month,No,DE,Yes
+C100366,34,82.03,2789.02,Month-to-month,No,DE,No
+C100367,23,50.85,1169.55,Two year,Yes,DE,Yes
+C100368,2,84.38,168.76,Month-to-month,Yes,DE,Yes
+C100369,55,57.76,3176.8,Month-to-month,Yes,DE,Yes
+C100370,24,55.2,1324.8,One year,No,DE,No
+C100371,47,,3908.99,One year,Yes,DE,No
+C100372,30,65.62,1968.6,Month-to-month,Yes,DE,No
+C100373,27,70.57,1905.39,Month-to-month,No,DE,No
+C100374,63,65.28,4112.64,Month-to-month,No,DE,Yes
+C100375,7,71.73,502.11,One year,Yes,DE,No
+C100376,53,73.5,3895.5,Month-to-month,No,DE,Yes
+C100377,54,26.26,1418.04,Month-to-month,No,DE,No
+C100378,27,78.33,2114.91,Month-to-month,No,DE,Yes
+C100379,19,45.36,861.84,One year,No,DE,No
+C100380,1,36.15,36.15,Month-to-month,Yes,DE,No
+C100381,67,63.83,4276.61,Two year,No,DE,No
+C100382,68,66.68,4534.24,Month-to-month,yes ,DE,No
+C100383,18,51.13,920.34,One year,No,DE,No
+C100384,3,81.62,244.86,Month-to-month,No,DE,No
+C100385,9,38.16,343.44,Month-to-month,No,DE,No
+C100386,5,56.86,284.3,Month-to-month,No,DE,Yes
+C100387,60,53.3,3198.0,Two year,No,DE,No
+C100388,64,64.07,4100.48,Two year,yes ,DE,No
+C100389,11,70.58,776.38,Month-to-month,No,DE,No
+C100390,54,44.84,2421.36,Month-to-month,Yes,DE,Yes
+C100391,13,79.49,1033.37,Two year,No,DE,No
+C100392,27,,1789.02,Month-to-month,Yes,DE,No
+C100393,43,27.16,1167.88,Month-to-month,No,DE,No
+C100394,52,25.83,1343.16,Month-to-month,No,DE,Yes
+C100395,63,64.75,4079.25,One year,No,DE,No
+C100396,4,60.58,242.32,One year,No,DE,No
+C100397,14,62.93,881.02,One year,Yes,DE,Yes
+C100398,20,64.44,1288.8,Two year,Yes,DE,No
+C100399,23,69.51,1598.73,Month-to-month,No,DE,No
+C100400,71,83.95,5960.45,Month-to-month,No,DE,Yes
+C100401,56,42.78,2395.68,Month-to-month,No,DE,Yes
+C100402,23,41.56,955.88,Month-to-month,No,DE,No
+C100403,69,43.13,2975.97,Month-to-month,No,DE,Yes
+C100404,36,70.78,2548.08,Month-to-month,Yes,DE,No
+C100405,36,89.9,3236.4,Month-to-month,yes ,DE,No
+C100406,31,56.37,1747.47,One year,No,DE,No
+C100407,11,18.0,198.0,Month-to-month,No,DE,Yes
+C100408,67,30.92,2071.64,Month-to-month,No,DE,No
+C100409,1,48.34,48.34,One year,No,DE,No
+C100410,13,53.85,700.05,One year,No,DE,Yes
+C100411,17,56.83,966.11,One year,No,DE,No
+C100412,20,65.77, ,Two year,No,DE,No
+C100413,10,58.77,587.7,One year,Yes,DE,No
+C100414,2,85.99,171.98,Month-to-month,No,DE,Yes
+C100415,49,51.48,2522.52,Month-to-month,No,DE,Yes
+C100416,69,47.75,3294.75,One year,Yes,DE,No
+C100417,9,74.58,671.22,Month-to-month,No,DE,Yes
+C100418,22,34.29,754.38,Month-to-month,yes ,DE,Yes
+C100419,36,72.79,2620.44,Month-to-month,No,DE,No
+C100420,66,67.05,4425.3,Month-to-month,Yes,DE,Yes
+C100421,50,, ,Month-to-month,No,DE,No
+C100422,55,96.77,5322.35,Month-to-month,Yes,DE,Yes
+C100423,42,,2207.52,Two year,No,DE,No
+C100424,30,106.21,3186.3,Two year,No,DE,No
+C100425,15,60.49,907.35,Month-to-month,No,DE,Yes
+C100426,62,39.46,2446.52,Two year,No,DE,No
+C100427,58,66.4,3851.2,,Yes,DE,No
+C100428,2,43.48,86.96,Two year,No,DE,No
+C100429,51,49.96,2547.96,Two year,No,DE,No
+C100430,6,,437.64,Month-to-month,Yes,DE,No
+C100431,53,76.11,4033.83,One year,Yes,DE,Yes
+C100432,59,52.56,3101.04,Two year,Yes,DE,No
+C100433,10,84.75,847.5,Two year,No,DE,No
+C100434,31,88.15,2732.65,Two year,No,DE,No
+C100435,9,93.73, ,One year,No,DE,Yes
+C100436,41,75.59,3099.19,,No,DE,Yes
+C100437,66,92.27,6089.82,,Yes,DE,No
+C100438,6,27.38,164.28,One year,No,DE,No
+C100439,29,58.64,1700.56,One year,Yes,DE,No
+C100440,70,,3336.2,Month-to-month,Yes,DE,No
+C100441,22,67.38,1482.36,One year,Yes,DE,Yes
+C100442,10,53.57,535.7,Month-to-month,Yes,DE,No
+C100443,35,61.68,2158.8,One year,No,DE,No
+C100444,37,102.64,3797.68,Month-to-month,No,DE,No
+C100445,48,61.61,2957.28,One year,No,DE,No
+C100446,23,73.28,1685.44,Two year,Yes,DE,No
+C100447,68,60.35,4103.8,Month-to-month,Yes,DE,No
+C100448,37,66.51,2460.87,Month-to-month,Yes,DE,Yes
+C100449,21,65.12,1367.52,Month-to-month,No,DE,Yes
+C100450,69,73.97,5103.93,Two year,Yes,DE,No
+C100451,66,88.31,5828.46,One year,Yes,DE,Yes
+C100452,36,97.95,3526.2,Month-to-month,No,DE,No
+C100453,2,71.19,142.38,Month-to-month,No,DE,Yes
+C100454,43,76.79,3301.97,Month-to-month,No,DE,No
+C100455,40,41.98,1679.2,Month-to-month,Yes,DE,No
+C100456,11,63.24,695.64,Two year,No,DE,No
+C100457,46,83.81,3855.26,One year,Yes,DE,No
+C100458,60,82.32,4939.2,Month-to-month,No,DE,No
+C100459,8,69.23,553.84,Two year,Yes,DE,No
+C100460,52,82.73,4301.96,Month-to-month,No,DE,Yes
+C100461,10,74.82,748.2,Two year,No,DE,Yes
+C100462,54,89.01,4806.54,Month-to-month,No,DE,No
+C100463,30,,2123.7,One year,YES,DE,Yes
+C100464,1,57.89,57.89,Two year,Yes,DE,Yes
+C100465,69,71.72,4948.68,Month-to-month,No,DE,Yes
+C100466,12,18.0,216.0,One year,No,DE,No
+C100467,43,72.66,3124.38,Two year,Yes,DE,Yes
+C100468,13,18.0,234.0,Month-to-month,Yes,DE,No
+C100469,67,30.53,2045.51,,Yes,DE,No
+C100470,53,74.04,3924.12,One year,Yes,DE,No
+C100471,58,74.55,4323.9,Month-to-month,Yes,DE,Yes
+C100472,31,41.75,1294.25,Month-to-month,Yes,DE,No
+C100473,34,50.76,1725.84,Month-to-month,Yes,DE,No
+C100474,46,92.41,4250.86,One year,Yes,DE,No
+C100475,56,55.32,3097.92,Month-to-month,No,DE,No
+C100476,61,109.86,6701.46,Month-to-month,Yes,DE,Yes
+C100477,2,64.96,129.92,Two year,Yes,DE,No
+C100478,48,73.16,3511.68,Month-to-month,Yes,DE,Yes
+C100479,8,97.34,778.72,Two year,No,DE,No
+C100480,21,67.62,1420.02,Month-to-month,Yes,DE,No
+C100481,59,44.95,2652.05,Two year,Yes,DE,No
+C100482,18,,1130.58,One year,Yes,DE,No
+C100483,57,900.0,3664.53,Month-to-month,Yes,DE,Yes
+C100484,33,37.71,1244.43,Two year,Yes,DE,No
+C100485,17,59.88,1017.96,Month-to-month,Yes,DE,No
+C100486,24,50.16,1203.84,Month-to-month,No,DE,Yes
+C100487,38,83.49,3172.62,Month-to-month,Yes,DE,Yes
+C100488,55,65.69,3612.95,One year,Yes,DE,No
+C100489,44,59.34,2610.96,Month-to-month,No,DE,Yes
+C100490,67,62.88,4212.96,Month-to-month,No,DE,No
+C100491,62,69.46,4306.52,Month-to-month,No,DE,No
+C100492,54,77.34,4176.36,Month-to-month,Yes,DE,No
+C100493,43,45.01,1935.43,Month-to-month,Yes,DE,Yes
+C100494,21,,927.57,Month-to-month,Yes,DE,No
+C100495,30,87.09,2612.7,Month-to-month,No,DE,No
+C100496,9,56.75,510.75,Month-to-month,YES,DE,Yes
+C100497,27,36.66,989.82,One year,No,DE,No
+C100498,66,73.88,4876.08,Month-to-month,No,DE,Yes
+C100499,31,74.27,2302.37,One year,No,DE,No
+C100500,9,34.39,309.51,Month-to-month,yes ,DE,No
+C100501,47,69.59,3270.73,Month-to-month,yes ,DE,No
+C100502,69,79.71,5499.99,Month-to-month,Yes,DE,No
+C100503,62,72.49,4494.38,Month-to-month,No,DE,Yes
+C100504,20,77.64,1552.8,Month-to-month,No,DE,Yes
+C100505,33,,1218.03,Two year,No,DE,No
+C100506,38,,2721.56,Month-to-month,Yes,DE,No
+C100507,18,58.95,1061.1,,No,DE,No
+C100508,20,55.34,1106.8,One year,Yes,DE,No
+C100509,17,82.41,1400.97,Month-to-month,Yes,DE,No
+C100510,71,94.59,6715.89,Month-to-month,Yes,DE,Yes
+C100511,53,100.89,5347.17,Month-to-month,No,DE,Yes
+C100512,60,91.3,5478.0,Month-to-month,No,DE,Yes
+C100513,58,62.81,3642.98,Month-to-month,Yes,DE,No
+C100514,69,72.05,4971.45,One year,No,DE,No
+C100515,8,,642.72,Two year,No,DE,No
+C100516,63,67.42,4247.46,Month-to-month,Yes,DE,Yes
+C100517,5,67.62,338.1,One year,No,DE,Yes
+C100518,34,81.48,2770.32,One year,No,DE,No
+C100519,43,63.81,2743.83,Month-to-month,Yes,DE,Yes
+C100520,26,900.0,1310.66,One year,Yes,DE,No
+C100521,11,56.71,623.81,One year,No,DE,No
+C100522,14,77.68,1087.52,Two year,Yes,DE,No
+C100523,59,65.06,3838.54,Two year,No,DE,No
+C100524,23,71.8,1651.4,Month-to-month,Yes,DE,No
+C100525,23,78.4,1803.2,Month-to-month,Yes,DE,Yes
+C100526,66,57.5,3795.0,Month-to-month,YES,DE,No
+C100527,11,80.12,881.32,Month-to-month,No,DE,No
+C100528,65,72.58,4717.7,Month-to-month,No,DE,Yes
+C100529,66,40.3,2659.8,Two year,No,DE,No
+C100530,43,93.85,4035.55,Month-to-month,Yes,DE,Yes
+C100531,12,54.99,659.88,Month-to-month,No,DE,No
+C100532,12,31.9,382.8,Two year,No,DE,No
+C100533,21,44.1,926.1,Month-to-month,Yes,DE,No
+C100534,41,44.58,1827.78,Month-to-month,No,DE,No
+C100535,11,66.04,726.44,Two year,Yes,DE,No
+C100536,33,,1964.16,Month-to-month,No,DE,Yes
+C100537,9,58.26,524.34,Month-to-month,No,DE,Yes
+C100538,39,77.39,3018.21,Month-to-month,Yes,DE,Yes
+C100539,2,71.8,143.6,Two year,Yes,DE,No
+C100540,51,71.32,3637.32,Month-to-month,No,DE,No
+C100541,4,73.2,292.8,Month-to-month,Yes,DE,Yes
+C100542,14,77.32,1082.48,Month-to-month,yes ,DE,No
+C100543,13,22.84,296.92,Month-to-month,Yes,DE,Yes
+C100544,60,57.71,3462.6,Two year,No,DE,No
+C100545,4,21.4,85.6,Month-to-month,Yes,DE,Yes
+C100546,31,65.72,2037.32,Two year,Yes,DE,Yes
+C100547,42,64.91,2726.22,Month-to-month,No,DE,No
+C100548,37,85.91,3178.67,Month-to-month,Yes,DE,Yes
+C100549,49,88.75,4348.75,Two year,No,DE,Yes
+C100550,58,69.06,4005.48,Month-to-month,No,DE,No
+C100551,28,54.99,1539.72,Month-to-month,No,DE,No
+C100552,59,74.7,4407.3,Two year,Yes,DE,No
+C100553,23,54.44,1252.12,Month-to-month,No,DE,No
+C100554,70,64.97,4547.9,Month-to-month,No,DE,No
+C100555,36,84.72,3049.92,Two year,Yes,DE,No
+C100556,53,53.84,2853.52,Month-to-month,Yes,DE,No
+C100557,63,81.11,5109.93,Month-to-month,Yes,DE,No
+C100558,57,78.55,4477.35,,Yes,DE,Yes
+C100559,61,45.9,2799.9,Month-to-month,Yes,DE,Yes
+C100560,39,84.48,3294.72,Month-to-month,Yes,DE,Yes
+C100561,4,78.97,315.88,,Yes,DE,No
+C100562,36,67.04,2413.44,Month-to-month,Yes,DE,No
+C100563,13,49.75,646.75,One year,Yes,DE,No
+C100564,64,47.82,3060.48,Month-to-month,No,DE,No
+C100565,17,54.25,922.25,Month-to-month,Yes,DE,Yes
+C100566,17,75.85,1289.45,Month-to-month,Yes,DE,Yes
+C100567,18,45.89,826.02,One year,Yes,DE,No
+C100568,46,73.75,3392.5,Month-to-month,Yes,DE,No
+C100569,41,40.16,1646.56,Month-to-month,Yes,DE,No
+C100570,68,60.92,4142.56,Two year,Yes,DE,No
+C100571,30,67.19,2015.7,One year,No,DE,No
+C100572,21,113.9,2391.9,Month-to-month,No,DE,No
+C100573,4,37.45,149.8,Two year,No,DE,No
+C100574,1,94.44,94.44,Month-to-month,No,DE,Yes
+C100575,27,68.0,1836.0,Month-to-month,No,DE,Yes
+C100576,66,73.22,4832.52,Month-to-month,Yes,DE,No
+C100577,38,67.37,2560.06,Month-to-month,No,DE,Yes
+C100578,64,73.89,4728.96,Month-to-month,No,DE,Yes
+C100579,8,61.93,495.44,One year,No,DE,No
+C100580,7,94.08,658.56,Month-to-month,No,DE,Yes
+C100581,60,55.87,3352.2,Two year,Yes,DE,No
+C100582,8,87.64,701.12,,No,DE,No
+C100583,4,52.11,208.44,One year,No,DE,No
+C100584,29,63.79,1849.91,One year,Yes,DE,No
+C100585,66,900.0,2874.96,,Yes,DE,No
+C100586,49,74.1,3630.9,Two year,No,DE,No
+C100587,8,93.9,751.2,Month-to-month,Yes,DE,Yes
+C100588,60,63.45,3807.0,Month-to-month,YES,DE,No
+C100589,60,61.06,3663.6,Month-to-month,Yes,DE,Yes
+C100590,57,42.71,2434.47,Month-to-month,No,DE,Yes
+C100591,65,60.41,3926.65,Month-to-month,Yes,DE,No
+C100592,18,33.14,596.52,One year,Yes,DE,No
+C100593,70,46.74,3271.8,Month-to-month,Yes,DE,No
+C100594,23,69.54,1599.42,Two year,Yes,DE,No
+C100595,57,91.38,5208.66,Month-to-month,No,DE,Yes
+C100596,42,120.0,5040.0,Month-to-month,No,DE,No
+C100597,56,53.27,2983.12,Month-to-month,No,DE,Yes
+C100598,45,93.71,4216.95,Month-to-month,No,DE,Yes
+C100599,46,69.88,3214.48,Month-to-month,No,DE,Yes
+C100600,44,61.98,2727.12,Month-to-month,Yes,DE,Yes
+C100601,56,73.65,4124.4,Month-to-month,No,DE,Yes
+C100602,53,,3510.72,Month-to-month,Yes,DE,No
+C100603,10,67.21,672.1,Month-to-month,No,DE,Yes
+C100604,59,56.83,3352.97,Month-to-month,No,DE,Yes
+C100605,39,37.04,1444.56,Month-to-month,Yes,DE,No
+C100606,23,34.13,784.99,Month-to-month,No,DE,Yes
+C100607,37,78.06,2888.22,Month-to-month,No,DE,No
+C100608,69,59.47,4103.43,Month-to-month,Yes,DE,No
+C100609,61,53.08,3237.88,Month-to-month,No,DE,No
+C100610,60,65.17,3910.2,One year,Yes,DE,No
+C100611,33,80.9,2669.7,Two year,yes ,DE,Yes
+C100612,56,68.61,3842.16,Two year,Yes,DE,Yes
+C100613,28,51.88,1452.64,,Yes,DE,No
+C100614,49,89.53,4386.97,Month-to-month,No,DE,No
+C100615,46,96.58,4442.68,Month-to-month,No,DE,No
+C100616,18,74.89,1348.02,One year,No,DE,Yes
+C100617,19,84.47,1604.93,One year,No,DE,No
+C100618,5,89.84,449.2,Two year,No,DE,Yes
+C100619,10,87.6,876.0,Two year,Yes,DE,Yes
+C100620,31,77.28,2395.68,Month-to-month,YES,DE,Yes
+C100621,34,76.97,2616.98,One year,No,DE,No
+C100622,12,,904.68,Two year,No,DE,Yes
+C100623,30,43.05,1291.5,Month-to-month,Yes,DE,No
+C100624,43,79.01,3397.43,Two year,No,DE,No
+C100625,17,37.88,643.96,Month-to-month,Yes,DE,No
+C100626,25,49.11,1227.75,Two year,Yes,DE,No
+C100627,27,91.07,2458.89,One year,Yes,DE,No
+C100628,36,81.8,2944.8,Month-to-month,Yes,DE,Yes
+C100629,27,94.75,2558.25,One year,Yes,DE,Yes
+C100630,53,59.57,3157.21,Month-to-month,YES,DE,No
+C100631,24,41.96,1007.04,One year,No,DE,No
+C100632,31,60.19,1865.89,One year,No,DE,Yes
+C100633,27,67.04,1810.08,One year,Yes,DE,Yes
+C100634,13,66.58,865.54,Two year,No,DE,No
+C100635,49,87.67,4295.83,Month-to-month,No,DE,Yes
+C100636,17,57.77,982.09,Month-to-month,Yes,DE,Yes
+C100637,22,72.04,1584.88,Month-to-month,Yes,DE,No
+C100638,57,45.23,2578.11,Month-to-month,Yes,DE,Yes
+C100639,68,,5032.68,Month-to-month,No,DE,No
+C100640,48,65.06,3122.88,Month-to-month,No,DE,No
+C100641,66,50.0,3300.0,Month-to-month,No,DE,Yes
+C100642,61,60.28,3677.08,Month-to-month,No,DE,No
+C100643,35,61.32,2146.2,Two year,No,DE,No
+C100644,55,,3278.0,Month-to-month,Yes,DE,No
+C100645,24,100.43,2410.32,Two year,No,DE,Yes
+C100646,33,,2079.99,Month-to-month,Yes,DE,Yes
+C100647,39,60.12,2344.68,Month-to-month,No,DE,Yes
+C100648,69,23.05,1590.45,Month-to-month,No,DE,No
+C100649,61,47.12,2874.32,Month-to-month,No,DE,No
+C100650,35,59.74,2090.9,Month-to-month,Yes,DE,No
+C100651,47,51.28, ,Month-to-month,No,DE,No
+C100652,15,92.63,1389.45,Month-to-month,No,DE,No
+C100653,58,61.7,3578.6,Month-to-month,No,DE,No
+C100654,40,,3630.8,One year,No,DE,Yes
+C100655,38,66.23,2516.74,,Yes,DE,No
+C100656,55,65.74,3615.7,Two year,Yes,DE,No
+C100657,45,63.22,2844.9,Month-to-month,Yes,DE,Yes
+C100658,6,65.08,390.48,Two year,No,DE,No
+C100659,21,99.38,2086.98,One year,Yes,DE,No
+C100660,13,18.61,241.93,Two year,No,DE,No
+C100661,53,24.97,1323.41,Two year,Yes,DE,No
+C100662,3,54.14,162.42,Month-to-month,No,DE,Yes
+C100663,15,65.29,979.35,Month-to-month,Yes,DE,Yes
+C100664,43,78.8,3388.4,Month-to-month,No,DE,Yes
+C100665,50,74.46,3723.0,Two year,Yes,DE,No
+C100666,36,57.32,2063.52,One year,Yes,DE,No
+C100667,62,,5293.56,Month-to-month,No,DE,Yes
+C100668,66,85.6,5649.6,Two year,Yes,DE,No
+C100669,10,68.68,686.8,Month-to-month,Yes,DE,Yes
+C100670,68,84.25,5729.0,One year,Yes,DE,Yes
+C100671,44,70.45,3099.8,One year,No,DE,No
+C100672,46,53.77,2473.42,Month-to-month,Yes,DE,No
+C100673,7,78.96,552.72,One year,Yes,DE,No
+C100674,45,67.21,3024.45,Two year,No,DE,No
+C100675,52,65.03,3381.56,Month-to-month,No,DE,No
+C100676,42,94.46,3967.32,Month-to-month,Yes,DE,Yes
+C100677,6,18.0,108.0,Month-to-month,Yes,DE,Yes
+C100678,38,36.65,1392.7,One year,Yes,DE,No
+C100679,67,41.26,2764.42,,Yes,DE,No
+C100680,52,57.73,3001.96,Two year,No,DE,No
+C100681,10,59.91,599.1,Two year,Yes,DE,No
+C100682,69,34.85,2404.65,Month-to-month,No,DE,No
+C100683,69,45.3,3125.7,Month-to-month,No,DE,No
+C100684,13,47.78,621.14,One year,Yes,DE,No
+C100685,57,114.15,6506.55,One year,Yes,DE,Yes
+C100686,29,101.03,2929.87,Month-to-month,Yes,DE,Yes
+C100687,43,56.77,2441.11,Month-to-month,No,DE,Yes
+C100688,32,57.73,1847.36,Month-to-month,No,DE,Yes
+C100689,56,42.02,2353.12,Two year,Yes,DE,No
+C100690,71,26.84,1905.64,Month-to-month,Yes,DE,No
+C100691,57,62.66,3571.62,Two year,No,DE,No
+C100692,67,45.04,3017.68,Month-to-month,Yes,DE,No
+C100693,68,63.3,4304.4,Two year,Yes,DE,No
+C100694,7,33.0,231.0,Month-to-month,Yes,DE,No
+C100695,18,49.76,895.68,Month-to-month,No,DE,Yes
+C100696,52,67.97,3534.44,Two year,No,DE,Yes
+C100697,42,72.32,3037.44,Two year,Yes,DE,No
+C100698,4,73.35,293.4,Month-to-month,Yes,DE,Yes
+C100699,7,,270.13,Month-to-month,Yes,DE,Yes
+C100700,37,82.09,3037.33,Month-to-month,No,DE,No
+C100701,44,900.0,2156.0,Month-to-month,Yes,DE,No
+C100702,12,,931.92,Month-to-month,yes ,DE,No
+C100703,13,64.79,842.27,Two year,Yes,DE,Yes
+C100704,10,37.47,374.7,Month-to-month,No,DE,No
+C100705,41,58.68,2405.88,One year,Yes,DE,No
+C100706,1,72.31,72.31,Month-to-month,No,DE,Yes
+C100707,41,77.26,3167.66,Month-to-month,No,DE,No
+C100708,34,62.18,2114.12,One year,No,DE,No
+C100709,34,95.64,3251.76,Month-to-month,Yes,DE,Yes
+C100710,49,85.15,4172.35,One year,Yes,DE,Yes
+C100711,38,59.87,2275.06,Month-to-month,Yes,DE,No
+C100712,52,80.0,4160.0,Two year,YES,DE,Yes
+C100713,55,103.68,5702.4,One year,No,DE,Yes
+C100714,66,104.21,6877.86,Two year,Yes,DE,Yes
+C100715,57,40.44,2305.08,Month-to-month,Yes,DE,No
+C100716,37,46.47,1719.39,Month-to-month,No,DE,Yes
+C100717,35,94.7,3314.5,Month-to-month,Yes,DE,Yes
+C100718,17,43.83,745.11,Month-to-month,Yes,DE,Yes
+C100719,43,38.55,1657.65,Month-to-month,No,DE,No
+C100720,10,55.28,552.8,Month-to-month,No,DE,No
+C100721,67,73.4,4917.8,Month-to-month,No,DE,No
+C100722,60,,3777.0,Month-to-month,Yes,DE,Yes
+C100723,9,,467.91,Month-to-month,No,DE,Yes
+C100724,56,51.52,2885.12,Month-to-month,No,DE,No
+C100725,9,50.75,456.75,Month-to-month,Yes,DE,Yes
+C100726,52,47.41,2465.32,One year,Yes,DE,No
+C100727,7,110.63,774.41,Month-to-month,No,DE,No
+C100728,35,70.95, ,Month-to-month,Yes,DE,No
+C100729,47,82.74,3888.78,Month-to-month,Yes,DE,No
+C100730,52,55.22,2871.44,One year,No,DE,No
+C100731,30,61.28,1838.4,Month-to-month,No,DE,Yes
+C100732,66,50.73,3348.18,One year,Yes,DE,No
+C100733,55,18.0,990.0,Two year,No,DE,No
+C100734,15,37.44,561.6,Month-to-month,No,DE,No
+C100735,48,28.79,1381.92,Two year,No,DE,No
+C100736,52,20.0,1040.0,One year,Yes,DE,No
+C100737,24,41.09,986.16,Month-to-month,Yes,DE,No
+C100738,53,,4849.5,Month-to-month,No,DE,Yes
+C100739,64,64.11,4103.04,One year,Yes,DE,Yes
+C100740,59,90.81,5357.79,Two year,No,DE,No
+C100741,55,73.22,4027.1,Month-to-month,No,DE,Yes
+C100742,46,80.65,3709.9,Month-to-month,Yes,DE,No
+C100743,20,46.98,939.6,One year,No,DE,No
+C100744,57,75.48,4302.36,Month-to-month,No,DE,Yes
+C100745,26,79.57,2068.82,One year,No,DE,Yes
+C100746,38,53.47,2031.86,Month-to-month,No,DE,No
+C100747,23,76.19,1752.37,One year,No,DE,No
+C100748,23,76.32,1755.36,Two year,No,DE,Yes
+C100749,12,54.01,648.12,One year,No,DE,No
+C100750,69,42.54,2935.26,One year,YES,DE,No
+C100751,11,41.32,454.52,One year,Yes,DE,No
+C100752,7,,467.11,Two year,Yes,DE,No
+C100753,67,71.54,4793.18,Two year,Yes,DE,No
+C100754,40,49.15,1966.0,Month-to-month,No,DE,No
+C100755,32,65.53,2096.96,One year,Yes,DE,No
+C100756,53,76.41,4049.73,Month-to-month,No,DE,No
+C100757,28,77.36,2166.08,Two year,Yes,DE,No
+C100758,10,96.04,960.4,One year,Yes,DE,Yes
+C100759,52,90.54,4708.08,Month-to-month,Yes,DE,No
+C100760,13,44.97,584.61,Month-to-month,No,DE,Yes
+C100761,40,98.67,3946.8,Month-to-month,yes ,DE,Yes
+C100762,68,54.38,3697.84,One year,No,DE,No
+C100763,67,85.9,5755.3,Month-to-month,No,DE,Yes
+C100764,26,66.36,1725.36,Month-to-month,Yes,DE,No
+C100765,56,56.76,3178.56,Two year,No,DE,No
+C100766,44,,1269.4,One year,Yes,DE,No
+C100767,35,61.57,2154.95,Month-to-month,Yes,DE,Yes
+C100768,10,33.81,338.1,Month-to-month,No,DE,Yes
+C100769,27,84.35,2277.45,Two year,No,DE,No
+C100770,47,95.34,4480.98,One year,Yes,DE,No
+C100771,71,49.06,3483.26,One year,No,DE,No
+C100772,1,71.04,71.04,Month-to-month,Yes,DE,Yes
+C100773,51,50.49,2574.99,Month-to-month,No,DE,No
+C100774,61,52.43,3198.23,Month-to-month,YES,DE,No
+C100775,68,80.49,5473.32,One year,No,DE,No
+C100776,31,64.23,1991.13,Month-to-month,No,DE,No
+C100777,9,99.79,898.11,Month-to-month,No,DE,Yes
+C100778,20,55.36,1107.2,One year,Yes,DE,Yes
+C100779,61,,5184.39,Two year,YES,DE,No
+C100780,63,66.95,4217.85,One year,Yes,DE,No
+C100781,46,80.92,3722.32,Month-to-month,Yes,DE,Yes
+C100782,9,56.06,504.54,Month-to-month,No,DE,No
+C100783,9,64.01,576.09,Month-to-month,No,DE,No
+C100784,34,,2131.46,Month-to-month,Yes,DE,Yes
+C100785,42,48.28,2027.76,Month-to-month,Yes,DE,Yes
+C100786,3,78.24,234.72,Month-to-month,No,DE,Yes
+C100787,49,78.0,3822.0,One year,Yes,DE,No
+C100788,39,76.87,2997.93,Two year,Yes,DE,Yes
+C100789,1,95.74,95.74,Two year,yes ,DE,No
+C100790,7,93.99,657.93,Month-to-month,Yes,DE,No
+C100791,33,57.5,1897.5,Month-to-month,No,DE,No
+C100792,52,72.46,3767.92,Month-to-month,No,DE,No
+C100793,59,52.53, ,Month-to-month,YES,DE,Yes
+C100794,31,65.47,2029.57,Month-to-month,Yes,DE,Yes
+C100795,21,53.01,1113.21,Month-to-month,No,DE,No
+C100796,69,,6720.6,One year,No,DE,Yes
+C100797,33,72.27,2384.91,Month-to-month,Yes,DE,Yes
+C100798,23,60.64,1394.72,Two year,Yes,DE,No
+C100799,32,88.87,2843.84,Month-to-month,Yes,DE,Yes
+C100800,1,21.59,21.59,Month-to-month,No,DE,Yes
+C100801,22,24.72,543.84,Month-to-month,No,DE,No
+C100802,37,80.92,2994.04,Month-to-month,Yes,DE,No
+C100803,66,66.21,4369.86,Month-to-month,Yes,DE,No
+C100804,53,70.01,3710.53,Two year,Yes,DE,No
+C100805,56,,2154.32,Month-to-month,No,DE,No
+C100806,39,64.54,2517.06,Month-to-month,Yes,DE,No
+C100807,8,105.07,840.56,One year,Yes,DE,No
+C100808,28,81.48,2281.44,Month-to-month,Yes,DE,Yes
+C100809,71,68.39,4855.69,One year,No,DE,No
+C100810,4,56.22,224.88,Month-to-month,Yes,DE,Yes
+C100811,63,57.11,3597.93,Two year,No,DE,Yes
+C100812,49,22.42,1098.58,Month-to-month,No,DE,Yes
+C100813,21,70.15,1473.15,Month-to-month,No,DE,Yes
+C100814,56,81.91,4586.96,One year,Yes,DE,No
+C100815,60,,2009.4,Two year,Yes,DE,No
+C100816,4,51.77,207.08,,Yes,DE,No
+C100817,8,41.85,334.8,One year,No,DE,No
+C100818,48,45.69,2193.12,Month-to-month,No,DE,No
+C100819,71,66.07,4690.97,Month-to-month,No,DE,No
+C100820,2,23.31,46.62,Month-to-month,No,DE,No
+C100821,48,77.29,3709.92,One year,No,DE,Yes
+C100822,10,80.08,800.8,Month-to-month,Yes,DE,Yes
+C100823,47,59.98,2819.06,One year,No,DE,No
+C100824,45,18.0,810.0,Month-to-month,No,DE,No
+C100825,7,45.07,315.49,Two year,Yes,DE,No
+C100826,49,89.66,4393.34,Two year,No,DE,No
+C100827,64,18.0,1152.0,Month-to-month,Yes,DE,No
+C100828,62,58.05,3599.1,Month-to-month,Yes,DE,No
+C100829,3,41.4,124.2,Month-to-month,Yes,DE,Yes
+C100830,18,81.09,1459.62,Two year,Yes,DE,Yes
+C100831,18,51.5,927.0,Month-to-month,Yes,DE,Yes
+C100832,33,73.08,2411.64,Month-to-month,Yes,DE,Yes
+C100833,11,76.31,839.41,Month-to-month,No,DE,Yes
+C100834,61,101.72,6204.92,One year,Yes,DE,No
+C100835,56,60.94,3412.64,Month-to-month,Yes,DE,No
+C100836,58,72.52,4206.16,Month-to-month,No,DE,No
+C100837,15,35.3,529.5,Two year,Yes,DE,No
+C100838,2,,177.62,Month-to-month,Yes,DE,No
+C100839,65,49.79,3236.35,Two year,Yes,DE,No
+C100840,21,53.78,1129.38,Month-to-month,No,DE,Yes
+C100841,47,64.56,3034.32,Month-to-month,Yes,DE,No
+C100842,65,33.74,2193.1,Two year,No,DE,No
+C100843,3,69.58,208.74,One year,Yes,DE,Yes
+C100844,1,84.35,84.35,One year,Yes,DE,Yes
+C100845,1,70.86,70.86,Month-to-month,YES,DE,No
+C100846,12,33.22,398.64,Month-to-month,No,DE,No
+C100847,4,62.52,250.08,Month-to-month,Yes,DE,Yes
+C100848,59,79.84,4710.56,Month-to-month,Yes,DE,No
+C100849,44,27.44,1207.36,Month-to-month,No,DE,No
+C100850,70,43.5,3045.0,Month-to-month,Yes,DE,Yes
+C100851,57,82.53,4704.21,Month-to-month,Yes,DE,No
+C100852,69,70.4,4857.6,Month-to-month,No,DE,Yes
+C100853,17,73.24,1245.08,Month-to-month,Yes,DE,Yes
+C100854,21,102.19,2145.99,Month-to-month,No,DE,Yes
+C100855,61,,4536.57,Two year,No,DE,Yes
+C100856,18,78.16,1406.88,One year,No,DE,No
+C100857,5,119.21,596.05,Month-to-month,Yes,DE,Yes
+C100858,48,60.72,2914.56,One year,Yes,DE,No
+C100859,57,49.04,2795.28,Two year,Yes,DE,No
+C100860,69,900.0,5075.64,Month-to-month,Yes,DE,No
+C100861,66,73.78,4869.48,Month-to-month,No,DE,No
+C100862,9,54.47,490.23,Month-to-month,No,DE,No
+C100863,55,44.35,2439.25,Month-to-month,No,DE,Yes
+C100864,61,111.2,6783.2,One year,No,DE,No
+C100865,50,71.54,3577.0,Two year,No,DE,No
+C100866,59,50.35,2970.65,Month-to-month,Yes,DE,No
+C100867,60,83.32,4999.2,One year,Yes,DE,No
+C100868,32,62.82,2010.24,Month-to-month,Yes,DE,Yes
+C100869,3,59.94,179.82,One year,No,DE,Yes
+C100870,33,76.25,2516.25,One year,Yes,DE,No
+C100871,15,39.16,587.4,Month-to-month,No,DE,No
+C100872,9,72.05,648.45,Month-to-month,Yes,DE,Yes
+C100873,9,103.26,929.34,One year,No,DE,No
+C100874,50,74.32,3716.0,Two year,No,DE,No
+C100875,36,57.48,2069.28,Month-to-month,Yes,DE,Yes
+C100876,39,54.86,2139.54,Month-to-month,Yes,DE,Yes
+C100877,53,56.79,3009.87,Month-to-month,Yes,DE,No
+C100878,39,59.92,2336.88,One year,Yes,DE,No
+C100879,45,57.44,2584.8,One year,Yes,DE,Yes
+C100880,7,83.33,583.31,One year,No,DE,No
+C100881,61,30.34,1850.74,One year,Yes,DE,No
+C100882,32,82.24,2631.68,Two year,Yes,DE,No
+C100883,12,57.41,688.92,Two year,yes ,DE,No
+C100884,58,72.54,4207.32,Month-to-month,No,DE,No
+C100885,53,42.46,2250.38,One year,Yes,DE,No
+C100886,4,91.57,366.28,Month-to-month,No,DE,Yes
+C100887,14,89.91,1258.74,Month-to-month,Yes,DE,Yes
+C100888,2,84.19,168.38,Two year,Yes,DE,Yes
+C100889,20,34.7,694.0,One year,Yes,DE,No
+C100890,8,,652.64,Two year,Yes,DE,Yes
+C100891,51,73.1,3728.1,Month-to-month,Yes,DE,No
+C100892,38,32.89,1249.82,Month-to-month,No,DE,Yes
+C100893,70,64.51,4515.7,Month-to-month,Yes,DE,Yes
+C100894,54,72.29,3903.66,Month-to-month,Yes,DE,Yes
+C100895,44,76.12,3349.28,Month-to-month,Yes,DE,No
+C100896,37,68.55, ,Month-to-month,Yes,DE,No
+C100897,4,70.82,283.28,,Yes,DE,Yes
+C100898,5,94.47,472.35,Two year,No,DE,No
+C100899,44,89.52,3938.88,Month-to-month,No,DE,No
+C100900,1,18.0,18.0,Month-to-month,No,DE,Yes
+C100901,4,58.65,234.6,One year,Yes,DE,No
+C100902,16,61.71,987.36,Month-to-month,No,DE,Yes
+C100903,63,29.96,1887.48,Two year,No,DE,No
+C100904,33,66.88,2207.04,One year,No,DE,No
+C100905,51,89.98,4588.98,Month-to-month,Yes,DE,Yes
+C100906,30,43.27,1298.1,One year,No,DE,No
+C100907,13,71.73,932.49,One year,Yes,DE,No
+C100908,27,46.68,1260.36,One year,No,DE,No
+C100909,7,51.56,360.92,Two year,Yes,DE,No
+C100910,55,94.55,5200.25,One year,No,DE,No
+C100911,14,54.15,758.1,One year,Yes,DE,No
+C100912,27,74.24,2004.48,Month-to-month,No,DE,Yes
+C100913,70,27.58,1930.6,One year,Yes,DE,No
+C100914,43,102.25,4396.75,Two year,No,DE,No
+C100915,33,77.05,2542.65,One year,Yes,DE,No
+C100916,39,61.35,2392.65,One year,No,DE,No
+C100917,56,76.51,4284.56,Month-to-month,No,DE,Yes
+C100918,19,36.8,699.2,One year,Yes,DE,No
+C100919,46,88.65,4077.9,Two year,Yes,DE,No
+C100920,62,58.52,3628.24,Month-to-month,No,DE,Yes
+C100921,41,60.92,2497.72,Month-to-month,Yes,DE,Yes
+C100922,32,55.17,1765.44,Month-to-month,Yes,DE,Yes
+C100923,11,53.39,587.29,Month-to-month,No,DE,No
+C100924,18,78.89,1420.02,One year,Yes,DE,No
+C100925,68,70.12,4768.16,Month-to-month,Yes,DE,No
+C100926,39,78.03,3043.17,Month-to-month,Yes,DE,No
+C100927,22,,1426.04,One year,Yes,DE,No
+C100928,30,75.26,2257.8,One year,Yes,DE,No
+C100929,42,56.62,2378.04,One year,Yes,DE,No
+C100930,39,109.59,4274.01,One year,Yes,DE,No
+C100931,50,33.64,1682.0,One year,Yes,DE,Yes
+C100932,19,90.22,1714.18,One year,Yes,DE,Yes
+C100933,47,92.36,4340.92,One year,Yes,DE,No
+C100934,32,47.96,1534.72,Month-to-month,Yes,DE,No
+C100935,67,109.59,7342.53,One year,No,DE,No
+C100936,12,84.91,1018.92,Month-to-month,Yes,DE,No
+C100937,11,84.42,928.62,Month-to-month,No,DE,Yes
+C100938,33,65.56,2163.48,Month-to-month,No,DE,No
+C100939,37,60.66,2244.42,Two year,No,DE,No
+C100940,50,60.81,3040.5,One year,No,DE,No
+C100941,29,72.81,2111.49,Month-to-month,Yes,DE,Yes
+C100942,65,93.02,6046.3,One year,No,DE,No
+C100943,34,68.63,2333.42,Month-to-month,Yes,DE,No
+C100944,10,, ,One year,No,DE,No
+C100945,9,81.49,733.41,Two year,Yes,DE,No
+C100946,70,83.42,5839.4,One year,Yes,DE,No
+C100947,10,78.09,780.9,One year,Yes,DE,Yes
+C100948,68,79.91,5433.88,Month-to-month,Yes,DE,No
+C100949,20,59.58,1191.6,Month-to-month,Yes,DE,Yes
+C100950,7,46.42,324.94,Two year,No,DE,No
+C100951,22,47.64,1048.08,One year,Yes,DE,No
+C100952,44,32.29,1420.76,Month-to-month,No,DE,No
+C100953,31,69.74,2161.94,Month-to-month,Yes,DE,No
+C100954,56,63.33,3546.48,Month-to-month,No,DE,No
+C100955,44,56.2,2472.8,Month-to-month,Yes,DE,No
+C100956,29,18.0,522.0,Month-to-month,Yes,DE,No
+C100957,46,40.05,1842.3,Month-to-month,Yes,DE,No
+C100958,69,900.0,6031.98,Two year,YES,DE,No
+C100959,30,51.71,1551.3,Month-to-month,No,DE,Yes
+C100960,11,72.21,794.31,Month-to-month,Yes,DE,No
+C100961,30,37.19,1115.7,Month-to-month,Yes,DE,No
+C100962,60,93.77,5626.2,Month-to-month,No,DE,No
+C100963,16,,993.92,Two year,No,DE,No
+C100964,68,70.8,4814.4,Month-to-month,Yes,DE,No
+C100965,42,111.52,4683.84,One year,Yes,DE,No
+C100966,43,95.33,4099.19,Two year,Yes,DE,No
+C100967,23,58.87,1354.01,Month-to-month,No,DE,Yes
+C100968,66,53.14,3507.24,One year,No,DE,No
+C100969,3,58.49, ,Two year,Yes,DE,No
+C100970,22,75.2,1654.4,Month-to-month,YES,DE,Yes
+C100971,30,62.9,1887.0,Month-to-month,Yes,DE,No
+C100972,34,57.1,1941.4,Two year,No,DE,No
+C100973,34,94.34,3207.56,Two year,Yes,DE,Yes
+C100974,11,62.72,689.92,Month-to-month,Yes,DE,No
+C100975,17,110.99,1886.83,One year,Yes,DE,No
+C100976,7,66.81,467.67,Month-to-month,Yes,DE,No
+C100977,41,100.71,4129.11,Two year,No,DE,No
+C100978,25,72.15,1803.75,Month-to-month,Yes,DE,No
+C100979,41,84.26,3454.66,Month-to-month,Yes,DE,Yes
+C100980,42,50.51,2121.42,One year,No,DE,No
+C100981,50,47.92,2396.0,Two year,yes ,DE,Yes
+C100982,39,74.19,2893.41,Two year,Yes,DE,No
+C100983,47,84.77,3984.19,Month-to-month,No,DE,No
+C100984,42,65.81,2764.02,Month-to-month,No,DE,No
+C100985,47,39.27,1845.69,Two year,Yes,DE,No
+C100986,44,37.79,1662.76,Two year,Yes,DE,No
+C100987,23,36.46,838.58,Month-to-month,No,DE,No
+C100988,18,29.65,533.7,One year,Yes,DE,No
+C100989,56,67.19,3762.64,Month-to-month,No,DE,No
+C100990,25,87.5,2187.5,Month-to-month,No,DE,No
+C100991,39,,2524.47,Month-to-month,Yes,DE,No
+C100992,14,19.79,277.06,Month-to-month,No,DE,No
+C100993,31,61.18,1896.58,Month-to-month,Yes,DE,No
+C100994,38,61.74,2346.12,Two year,No,DE,No
+C100995,45,106.92,4811.4,Month-to-month,Yes,DE,No
+C100996,38,35.86,1362.68,Month-to-month,Yes,DE,Yes
+C100997,26,57.19,1486.94,Month-to-month,No,DE,No
+C100998,69,99.12,6839.28,Month-to-month,No,DE,No
+C100999,37,74.0,2738.0,Month-to-month,Yes,DE,No
+C100521,11,56.71,623.81,One year,No,DE,No
+C100737,24,41.09,986.16,Month-to-month,Yes,DE,No
+C100740,59,90.81,5357.79,Two year,No,DE,No
+C100660,13,18.61,241.93,Two year,No,DE,No
+C100411,17,56.83,966.11,One year,No,DE,No
+C100678,38,36.65,1392.7,One year,Yes,DE,No
+C100626,25,49.11,1227.75,Two year,Yes,DE,No
+C100513,58,62.81,3642.98,Month-to-month,Yes,DE,No
+C100859,57,49.04,2795.28,Two year,Yes,DE,No
+C100136,43,69.83,3002.69,Two year,Yes,DE,No
+C100811,63,57.11,3597.93,Two year,No,DE,Yes
+C100076,24,44.35,1064.4,Month-to-month,Yes,DE,Yes
+C100636,17,57.77,982.09,Month-to-month,Yes,DE,Yes
+C100973,34,94.34,3207.56,Two year,Yes,DE,Yes
+C100938,33,65.56,2163.48,Month-to-month,No,DE,No
+C100899,44,89.52,3938.88,Month-to-month,No,DE,No
+C100280,20,77.71,1554.2,One year,No,DE,No
+C100883,12,57.41,688.92,Two year,yes ,DE,No
+C100761,40,98.67,3946.8,Month-to-month,yes ,DE,Yes
+C100319,55,48.1,2645.5,Month-to-month,No,DE,No
+C100549,49,88.75,4348.75,Two year,No,DE,Yes
+C100174,50,71.39,3569.5,Month-to-month,No,DE,Yes
+C100371,47,,3908.99,One year,Yes,DE,No
+C100527,11,80.12,881.32,Month-to-month,No,DE,No
+C100210,19,60.08,1141.52,,No,DE,Yes
+C100235,52,33.73,1753.96,Month-to-month,No,DE,No
+C100101,15,59.12,886.8,Two year,Yes,DE,Yes
+C100986,44,37.79,1662.76,Two year,Yes,DE,No
+C100902,16,61.71,987.36,Month-to-month,No,DE,Yes
+C100947,10,78.09,780.9,One year,Yes,DE,Yes
