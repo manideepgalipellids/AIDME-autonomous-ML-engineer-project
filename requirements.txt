@@ -1,5 +1,7 @@
-# Phase 1 dependencies. Later phases add: langgraph, scikit-learn, xgboost,
-# mlflow, shap, evidently, qdrant-client, llama-index.
+# Phase 1-2 dependencies. Later phases add: xgboost, mlflow, shap, evidently,
+# qdrant-client, llama-index.
+langgraph>=0.2
+scikit-learn>=1.5
 fastapi>=0.115
 uvicorn[standard]>=0.30
 python-multipart>=0.0.9

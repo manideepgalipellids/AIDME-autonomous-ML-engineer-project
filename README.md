@@ -4,9 +4,9 @@ Upload a dataset, describe a business problem, get a validated, deployable,
 monitored ML model. Built as a multi-agent system (LangGraph) on top of
 deterministic, tested Python pipelines.
 
-**Status: Phase 1 (foundation) complete.** Upload a CSV/Excel file and get an
-automatic data profile, data-quality issues, likely prediction targets and a
-plain-English summary.
+**Status: Phase 2 (data preparation) complete.** Upload a CSV/Excel file, get
+an automatic data profile and summary, then run a LangGraph pipeline that picks
+the target, cleans the data, validates it and returns a model-ready CSV.
 
 ## Design rule
 
@@ -40,14 +40,49 @@ docker compose up --build
 
 UI on http://localhost:8501, API on http://localhost:8000.
 
+## Data preparation pipeline (Phase 2)
+
+```
+START -> analyst -> quality -> preprocess -> validate -> END
+                      ^                          |
+                      +------ retry (repair) ----+
+```
+
+| Step | What it does |
+| --- | --- |
+| Analyst | Picks the target column and task. Your choice wins; otherwise an optional LLM may choose among existing columns; otherwise a heuristic. The task type is always derived deterministically. |
+| Quality | Builds a cleaning plan from the profile. On a recoverable validation error it applies a repair from an explicit table (`agents/data_quality.py`) and retries. |
+| Preprocess | Fixes numbers stored as text, unifies labels (`Yes` / `yes `), splits date text into features, removes duplicate rows, rows without a target, identifier, constant and empty columns. |
+| Validate | Checks target, class counts, row count, infinite values, and fits the real sklearn preprocessor as a smoke test. Unrecoverable errors stop the run with a clear reason. |
+
+Design notes:
+
+- **Cleaning vs. learning.** `apply_plan` learns nothing from the data, so it
+  is safe before splitting. `build_preprocessor` (impute, scale, one-hot)
+  learns statistics, so Phase 3 must fit it on training folds only, inside a
+  Pipeline. Phase 2 only uses it as a smoke test.
+- **Missing values are kept as signal.** Numeric columns get a
+  missing-indicator; categorical columns get an explicit `__missing__`
+  category. A column that is missing because "this option has no such feature"
+  is information, not noise.
+- **Failures are results, not crashes.** The API returns HTTP 200 with
+  `status: "failed"` and the reasons.
+- `engine="python"` runs the same nodes without LangGraph (used for fast unit
+  tests); `PIPELINE_ENGINE` selects the engine for the API.
+
+API: `POST /datasets/{id}/prepare`, `GET /datasets/{id}/prepared`,
+`GET /prepared/{run_id}`, `GET /prepared/{run_id}/download`.
+
 ## Tests
 
 ```bash
 pytest
 ```
 
-`tests/test_ml.py` covers the profiling logic. `tests/test_api.py` covers the
-HTTP endpoints (it skips itself if the API packages are not installed).
+`test_ml.py` covers profiling, `test_preprocessing.py` cleaning and validation,
+`test_pipeline.py` the agents and workflow (including retry and failure paths,
+and a LangGraph-vs-Python parity check), `test_api.py` the HTTP endpoints. The
+API and LangGraph tests skip themselves if those packages are not installed.
 
 ## Sample data
 
@@ -72,7 +107,7 @@ HTTP endpoints (it skips itself if the API packages are not installed).
 ## Roadmap
 
 - [x] Phase 1: upload, profiling, summary, API, UI, Docker
-- [ ] Phase 2: LangGraph graph (Analyst, Quality, Preprocess) with validation
+- [x] Phase 2: LangGraph graph (Analyst, Quality, Preprocess, Validate) with retry
 - [ ] Phase 3: model training, MLflow, evaluation agents
 - [ ] Phase 4: SHAP, human approval, retries, RAG, memory
 - [ ] Phase 5: deployment packages, Evidently drift monitoring
@@ -83,9 +118,9 @@ HTTP endpoints (it skips itself if the API packages are not installed).
 ```
 frontend/     Streamlit UI
 backend/      FastAPI app and services
-ml_engine/    Deterministic data/ML code (profiling.py so far)
-agents/       LangGraph agents (Phase 2+)
-workflows/    Pipelines (Phase 2+)
+ml_engine/    Deterministic data/ML code (profiling, preprocessing, validation)
+agents/       Analyst and Quality agents
+workflows/    LangGraph data-preparation pipeline
 rag/          Retrieval (Phase 4)
 monitoring/   Drift detection (Phase 5)
 database/     SQLAlchemy models and connection

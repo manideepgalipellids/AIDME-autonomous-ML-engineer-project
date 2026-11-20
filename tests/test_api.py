@@ -12,6 +12,12 @@ _tmp = tempfile.mkdtemp()
 os.environ["DATABASE_URL"] = f"sqlite:///{_tmp}/test.db"
 os.environ["DATA_DIR"] = _tmp
 os.environ.pop("OPENAI_API_KEY", None)
+try:  # use the real LangGraph engine whenever it is installed
+    import langgraph  # noqa: F401
+
+    os.environ["PIPELINE_ENGINE"] = "langgraph"
+except ImportError:
+    os.environ["PIPELINE_ENGINE"] = "python"
 
 from fastapi.testclient import TestClient  # noqa: E402
 
@@ -53,4 +59,64 @@ def test_rejects_unsupported_type(client):
 
 def test_rejects_empty_file(client):
     resp = client.post("/datasets", files={"file": ("empty.csv", b"", "text/csv")})
+    assert resp.status_code == 422
+
+
+def _prep_csv(n: int = 120) -> bytes:
+    lines = ["customer_id,tenure,charges,plan,churn"]
+    for i in range(n):
+        plan = ["basic", "pro", "team"][i % 3]
+        churn = "Yes" if (i * 7) % 10 < 3 else "No"
+        lines.append(f"C{i},{i % 60 + 1},{50 + (i * 13) % 40}.5,{plan},{churn}")
+    return ("\n".join(lines) + "\n").encode()
+
+
+def _upload(client, content: bytes = None) -> str:
+    resp = client.post(
+        "/datasets", files={"file": ("prep.csv", content or _prep_csv(), "text/csv")}
+    )
+    assert resp.status_code == 201
+    return resp.json()["id"]
+
+
+def test_prepare_success_download_and_cleanup(client):
+    ds_id = _upload(client)
+    resp = client.post(f"/datasets/{ds_id}/prepare", json={})
+    assert resp.status_code == 200
+    run = resp.json()
+    assert run["status"] == "succeeded"
+    assert run["target"] == "churn" and run["task"] == "classification"
+    assert run["has_output"] is True
+    assert run["report"]["validation"]["passed"] is True
+
+    csv = client.get(f"/prepared/{run['id']}/download")
+    assert csv.status_code == 200
+    header = csv.text.splitlines()[0]
+    assert "churn" in header and "customer_id" not in header  # identifier dropped
+
+    listed = client.get(f"/datasets/{ds_id}/prepared").json()
+    assert [r["id"] for r in listed] == [run["id"]]
+
+    assert client.delete(f"/datasets/{ds_id}").status_code == 204
+    assert client.get(f"/prepared/{run['id']}").status_code == 404
+
+
+def test_prepare_unknown_target_reports_failure(client):
+    ds_id = _upload(client)
+    resp = client.post(f"/datasets/{ds_id}/prepare", json={"target": "nope"})
+    assert resp.status_code == 200
+    run = resp.json()
+    assert run["status"] == "failed"
+    assert run["has_output"] is False
+    assert "was not found" in run["report"]["errors"][0]
+    assert client.get(f"/prepared/{run['id']}/download").status_code == 404
+
+
+def test_prepare_unknown_dataset_is_404(client):
+    assert client.post("/datasets/does-not-exist/prepare", json={}).status_code == 404
+
+
+def test_prepare_rejects_invalid_task(client):
+    ds_id = _upload(client)
+    resp = client.post(f"/datasets/{ds_id}/prepare", json={"task": "clustering"})
     assert resp.status_code == 422
