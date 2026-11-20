@@ -18,8 +18,9 @@ from sqlalchemy.orm import Session
 
 from backend.services.summary import summarize_profile
 from database.connection import get_db, init_db
-from database.models import Dataset, PreparedRun
+from database.models import Dataset, PreparedRun, TrainingRun
 from ml_engine.profiling import load_dataframe, profile_dataframe
+from ml_engine.training import log_to_mlflow, save_model, train_models
 from workflows.data_pipeline import result_report, run_pipeline
 
 logger = logging.getLogger("aidme.api")
@@ -27,6 +28,7 @@ logger = logging.getLogger("aidme.api")
 DATA_DIR = Path(os.getenv("DATA_DIR", "./data"))
 UPLOAD_DIR = DATA_DIR / "uploads"
 PREPARED_DIR = DATA_DIR / "prepared"
+MODEL_DIR = DATA_DIR / "models"
 PIPELINE_ENGINE = os.getenv("PIPELINE_ENGINE", "langgraph")  # or "python"
 MAX_UPLOAD_BYTES = int(os.getenv("MAX_UPLOAD_MB", "50")) * 1024 * 1024
 ALLOWED_EXTENSIONS = {".csv", ".tsv", ".txt", ".xlsx"}
@@ -36,6 +38,7 @@ ALLOWED_EXTENSIONS = {".csv", ".tsv", ".txt", ".xlsx"}
 async def lifespan(_: FastAPI):
     UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
     PREPARED_DIR.mkdir(parents=True, exist_ok=True)
+    MODEL_DIR.mkdir(parents=True, exist_ok=True)
     init_db()
     yield
 
@@ -131,6 +134,11 @@ def delete_dataset(dataset_id: str, db: Session = Depends(get_db)) -> None:
         raise HTTPException(404, "Dataset not found.")
     runs = db.scalars(select(PreparedRun).where(PreparedRun.dataset_id == dataset_id)).all()
     for run in runs:
+        for tr in db.scalars(select(TrainingRun).where(TrainingRun.prepared_run_id == run.id)).all():
+            if tr.model_path:
+                Path(tr.model_path).unlink(missing_ok=True)
+            db.delete(tr)
+        db.flush()
         if run.output_path:
             Path(run.output_path).unlink(missing_ok=True)
         db.delete(run)
@@ -247,4 +255,83 @@ def download_prepared(run_id: str, db: Session = Depends(get_db)) -> FileRespons
         raise HTTPException(404, "No prepared file for this run.")
     return FileResponse(
         run.output_path, media_type="text/csv", filename=f"prepared_{run_id[:8]}.csv"
+    )
+
+
+# --------------------------------------------------------------------------- #
+# Model training (Phase 3)
+# --------------------------------------------------------------------------- #
+class TrainRequest(BaseModel):
+    cv_folds: int = Field(default=5, ge=2, le=10)
+
+
+def _training_detail(tr: TrainingRun) -> dict:
+    return {
+        "id": tr.id,
+        "prepared_run_id": tr.prepared_run_id,
+        "status": tr.status,
+        "best_model": tr.best_model,
+        "has_model": bool(tr.model_path),
+        "mlflow_run_id": tr.mlflow_run_id,
+        "created_at": tr.created_at.isoformat() if tr.created_at else None,
+        "report": tr.report,
+    }
+
+
+@app.post("/prepared/{run_id}/train")
+def train_prepared(run_id: str, req: TrainRequest, db: Session = Depends(get_db)) -> dict:
+    """Cross-validate candidate models on a successfully prepared dataset."""
+    import pandas as pd
+
+    run = db.get(PreparedRun, run_id)
+    if run is None:
+        raise HTTPException(404, "Run not found.")
+    if run.status != "succeeded" or not run.output_path or not Path(run.output_path).exists():
+        raise HTTPException(409, "Only a successful preparation run can be trained on.")
+
+    training_id = str(uuid.uuid4())
+    try:
+        df = pd.read_csv(run.output_path)
+        result = train_models(df, run.target, run.task, cv_folds=req.cv_folds)
+    except ValueError as exc:
+        record = TrainingRun(
+            id=training_id, prepared_run_id=run_id, status="failed",
+            report={"error": str(exc)},
+        )
+        db.add(record)
+        db.commit()
+        return _training_detail(record)
+
+    model_path = MODEL_DIR / f"{training_id}.joblib"
+    save_model(result, model_path)
+    mlflow_id = log_to_mlflow(result["report"], model_path, f"{run.target}-{training_id[:8]}")
+    record = TrainingRun(
+        id=training_id, prepared_run_id=run_id, status="succeeded",
+        best_model=result["report"]["best_model"], report=result["report"],
+        model_path=str(model_path), mlflow_run_id=mlflow_id,
+    )
+    db.add(record)
+    db.commit()
+    return _training_detail(record)
+
+
+@app.get("/prepared/{run_id}/training")
+def list_training_runs(run_id: str, db: Session = Depends(get_db)) -> list[dict]:
+    if db.get(PreparedRun, run_id) is None:
+        raise HTTPException(404, "Run not found.")
+    rows = db.scalars(
+        select(TrainingRun).where(TrainingRun.prepared_run_id == run_id)
+        .order_by(TrainingRun.created_at.desc()).limit(20)
+    )
+    return [_training_detail(r) for r in rows]
+
+
+@app.get("/training/{training_id}/model")
+def download_model(training_id: str, db: Session = Depends(get_db)) -> FileResponse:
+    tr = db.get(TrainingRun, training_id)
+    if tr is None or not tr.model_path or not Path(tr.model_path).exists():
+        raise HTTPException(404, "No model file for this training run.")
+    return FileResponse(
+        tr.model_path, media_type="application/octet-stream",
+        filename=f"model_{training_id[:8]}.joblib",
     )

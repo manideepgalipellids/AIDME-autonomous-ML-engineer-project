@@ -4,7 +4,7 @@ Upload a dataset, describe a business problem, get a validated, deployable,
 monitored ML model. Built as a multi-agent system (LangGraph) on top of
 deterministic, tested Python pipelines.
 
-**Status: Phase 2 (data preparation) complete.** Upload a CSV/Excel file, get
+**Status: Phase 3 (model training) complete.** Upload a CSV/Excel file, get
 an automatic data profile and summary, then run a LangGraph pipeline that picks
 the target, cleans the data, validates it and returns a model-ready CSV.
 
@@ -73,6 +73,21 @@ Design notes:
 API: `POST /datasets/{id}/prepare`, `GET /datasets/{id}/prepared`,
 `GET /prepared/{run_id}`, `GET /prepared/{run_id}/download`.
 
+## Model training (Phase 3)
+
+`POST /prepared/{run_id}/train` cross-validates Logistic Regression / Ridge,
+Random Forest and XGBoost (if installed) against a trivial baseline.
+
+- The preprocessor is inside the sklearn Pipeline, so every CV fold fits it on
+  its own training part only (no leakage).
+- Classification is ranked by F1 (macro for multiclass), regression by RMSE.
+  Accuracy, precision, recall, ROC-AUC, MAE and R2 are reported too.
+- A model that cannot beat the baseline is flagged instead of presented as a success.
+- Metrics are cross-validated estimates, not a separate test set.
+- The best model is refitted on all rows and saved as `.joblib`.
+- If MLflow is installed, each run is logged (parent run + one child per model):
+  `mlflow ui --backend-store-uri sqlite:///mlflow.db`
+
 ## Tests
 
 ```bash
@@ -108,7 +123,7 @@ API and LangGraph tests skip themselves if those packages are not installed.
 
 - [x] Phase 1: upload, profiling, summary, API, UI, Docker
 - [x] Phase 2: LangGraph graph (Analyst, Quality, Preprocess, Validate) with retry
-- [ ] Phase 3: model training, MLflow, evaluation agents
+- [x] Phase 3: cross-validated model comparison, baseline check, MLflow logging
 - [ ] Phase 4: SHAP, human approval, retries, RAG, memory
 - [ ] Phase 5: deployment packages, Evidently drift monitoring
 - [ ] Phase 6: benchmark, auth, public deployment, demo video

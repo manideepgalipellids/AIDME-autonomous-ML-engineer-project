@@ -140,7 +140,7 @@ def apply_plan(df: pd.DataFrame, plan: dict[str, Any]) -> tuple[pd.DataFrame, li
             parsed = pd.to_datetime(out[c], errors="coerce")
         out[f"{c}_year"] = parsed.dt.year.astype("float64")
         out[f"{c}_month"] = parsed.dt.month.astype("float64")
-        out[f"{c}_weekday"] = parsed.dt.dayofweek.astype("float64")
+        out[f"{c}_weekday"] = parsed.dt.day_of_week.astype("float64")
         out = out.drop(columns=[c])
         changes.append(f"Split date column '{c}' into year, month and weekday features.")
 

@@ -120,3 +120,24 @@ def test_prepare_rejects_invalid_task(client):
     ds_id = _upload(client)
     resp = client.post(f"/datasets/{ds_id}/prepare", json={"task": "clustering"})
     assert resp.status_code == 422
+
+
+def test_train_download_and_guard(client):
+    ds_id = _upload(client, _prep_csv(240))
+    run = client.post(f"/datasets/{ds_id}/prepare", json={}).json()
+    assert run["status"] == "succeeded"
+
+    resp = client.post(f"/prepared/{run['id']}/train", json={"cv_folds": 3})
+    assert resp.status_code == 200
+    tr = resp.json()
+    assert tr["status"] == "succeeded"
+    assert tr["report"]["best_model"] and tr["has_model"]
+    assert client.get(f"/training/{tr['id']}/model").status_code == 200
+    assert len(client.get(f"/prepared/{run['id']}/training").json()) == 1
+
+    # a failed preparation cannot be trained on
+    bad = client.post(f"/datasets/{ds_id}/prepare", json={"target": "nope"}).json()
+    assert client.post(f"/prepared/{bad['id']}/train", json={}).status_code == 409
+
+    assert client.delete(f"/datasets/{ds_id}").status_code == 204
+    assert client.get(f"/training/{tr['id']}/model").status_code == 404

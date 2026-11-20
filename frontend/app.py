@@ -112,6 +112,60 @@ def show_run(run: dict) -> None:
             )
 
 
+def show_training(tr: dict) -> None:
+    report = tr["report"]
+    if tr["status"] != "succeeded":
+        st.error(f"Training failed: {report.get('error', 'unknown error')}")
+        return
+    primary = report["primary_metric"]
+    st.success(
+        f"Best model: **{report['best_model']}** "
+        f"({primary} = {next(r for r in report['results'] if r['model'] == report['best_model'])['metrics'][primary]})"
+    )
+    if report["beats_baseline"] is False:
+        st.warning("The best model does not beat the trivial baseline.")
+    for note in report["notes"]:
+        st.info(note)
+    rows = []
+    for r in report["results"]:
+        if r["status"] == "ok":
+            rows.append({"rank": r.get("rank", "-"), "model": r["model"],
+                         **{k: v for k, v in r["metrics"].items() if not k.endswith("_std")}})
+        else:
+            rows.append({"rank": "-", "model": r["model"], "error": r["error"]})
+    st.dataframe(pd.DataFrame(rows), hide_index=True)
+    st.caption(f"{report['cv_folds']}-fold cross-validation. {report['note_on_metrics']}")
+    if tr["has_model"]:
+        resp = api("GET", f"/training/{tr['id']}/model")
+        if resp.status_code == 200:
+            st.download_button("Download trained model (.joblib)", resp.content,
+                               file_name=f"model_{tr['id'][:8]}.joblib", key=f"mdl_{tr['id']}")
+    if tr.get("mlflow_run_id"):
+        st.caption(f"Logged to MLflow (run {tr['mlflow_run_id'][:8]}). Open it with: mlflow ui --backend-store-uri sqlite:///mlflow.db")
+
+
+def training_section(run: dict) -> None:
+    if run["status"] != "succeeded":
+        return
+    st.divider()
+    st.subheader("Train and compare models")
+    folds = st.slider("Cross-validation folds", 2, 10, 5, key=f"folds_{run['id']}")
+    if st.button("Train models", type="primary", key=f"train_{run['id']}"):
+        with st.spinner("Training (this can take a minute)..."):
+            try:
+                resp = api("POST", f"/prepared/{run['id']}/train", json={"cv_folds": folds})
+            except requests.RequestException as exc:
+                st.error(f"Request failed: {exc}")
+            else:
+                if resp.status_code == 200:
+                    st.session_state[f"train_{run['id']}"] = resp.json()
+                else:
+                    st.error(resp.json().get("detail", resp.text))
+    tr = st.session_state.get(f"train_{run['id']}")
+    if tr:
+        show_training(tr)
+
+
 def prepare_section(ds: dict) -> None:
     st.divider()
     st.subheader("Prepare data for machine learning")
@@ -150,6 +204,7 @@ def prepare_section(ds: dict) -> None:
     run = st.session_state.get(f"run_{ds['id']}")
     if run:
         show_run(run)
+        training_section(run)
 
 
 with st.sidebar:
